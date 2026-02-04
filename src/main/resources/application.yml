@@ -3,7 +3,6 @@ spring:
     name: iba-backend
 
   datasource:
-    # Local por padrão (se DATABASE_URL não existir)
     url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/iba_db}
     username: ${DB_USER:iba_user}
     password: ${DB_PASS:iba_pass}
@@ -40,3 +39,4 @@ springdoc:
 logging:
   level:
     com.iba: INFO
+
