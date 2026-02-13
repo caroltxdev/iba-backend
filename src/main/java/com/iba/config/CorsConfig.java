@@ -15,10 +15,9 @@ public class CorsConfig {
     public CorsFilter corsFilter() {
         CorsConfiguration config = new CorsConfiguration();
         config.setAllowCredentials(true);
-        config.setAllowedOrigins(Arrays.asList(
-                "http://localhost:4200",
-                "http://127.0.0.1:5500",
-                "https://6984a9f10652de2858d6d3c7--joyful-sprinkles-ff12ba.netlify.app"
+        config.setAllowedOriginPatterns(Arrays.asList(
+                "http://localhost:*",
+                "https://*.netlify.app"
         ));
         config.setAllowedHeaders(Arrays.asList("*"));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
