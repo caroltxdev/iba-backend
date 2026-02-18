@@ -19,7 +19,7 @@ public class CorsConfig {
         config.setAllowCredentials(true);
         config.setAllowedOriginPatterns(Arrays.asList(
                 "http://localhost:*",
-                "https://*.netlify.app"
+                "https://iba-frontend-one.vercel.app"
         ));
         config.setAllowedHeaders(Arrays.asList("*"));
         config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
